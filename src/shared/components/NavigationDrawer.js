@@ -60,7 +60,7 @@ function NavigationDrawer(props) {
               aria-label="Close Navigation"
               size="large"
             >
-              <CloseIcon color="primary" />
+              
             </IconButton>
           </ListItemIcon>
         </ListItem>

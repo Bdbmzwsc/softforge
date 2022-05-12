@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
+         <CssBaseline />
           <GlobalStyles />
           <Pace color={theme.palette.primary.light} />
           <Suspense fallback={<Fragment />}>
