@@ -131,6 +131,7 @@ function NavBar(props) {
   const links = useRef([]);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
+  // eslint-disable-next-line react/prop-types
   const isWidthUpSm = useMediaQuery(theme.breakpoints.up("sm"));
 
   const openMobileDrawer = useCallback(() => {
