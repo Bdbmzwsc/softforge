@@ -3,16 +3,17 @@ import PropTypes from "prop-types";
 import {
   Grid,
   Typography,
-  Box,
-  IconButton,
-  Hidden,
-  TextField,
+ // Box,
+ // IconButton,
+ // Hidden,
+ // TextField,
 } from "@mui/material";
+
 import withStyles from "@mui/styles/withStyles";
-import PhoneIcon from "@mui/icons-material/Phone";
-import MailIcon from "@mui/icons-material/Mail";
+//import PhoneIcon from "@mui/icons-material/Phone";
+//import MailIcon from "@mui/icons-material/Mail";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import ColoredButton from "../../../shared/components/ColoredButton";
+//import ColoredButton from "../../../shared/components/ColoredButton";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = (theme) => ({
@@ -73,7 +74,7 @@ const styles = (theme) => ({
   },
 });
 
-const infos = [
+/*const infos = [
   {
     icon: <PhoneIcon />,
     description: "+1 555 123456",
@@ -149,7 +150,7 @@ const socialIcons = [
     label: "Twitter",
     href: "https://www.twitter.com/",
   },
-];
+];*/
 
 function Footer(props) {
   const { classes, theme } = props;
@@ -164,6 +165,12 @@ function Footer(props) {
       />
       <div className={classes.footerInner}>
         <Grid container spacing={isWidthUpMd ? 10 : 5}>
+        <Typography variant="h3" paragraph className="text-white">
+        SoftForge.
+        </Typography>
+        <br />
+        <Typography variant="h6" paragraph className="text-white">© 2022 All rights reserved.</Typography>
+          {/*
           <Grid item xs={12} md={6} lg={4}>
             <form>
               <Box display="flex" flexDirection="column">
@@ -244,7 +251,7 @@ function Footer(props) {
                 </Box>
               ))}
             </Box>
-          </Grid>
+          </Grid>*/}
         </Grid>
       </div>
     </footer>

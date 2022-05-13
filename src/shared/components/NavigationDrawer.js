@@ -12,7 +12,7 @@ import {
   Toolbar,
 } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
-import CloseIcon from "@mui/icons-material/Close";
+//import CloseIcon from "@mui/icons-material/Close";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = (theme) => ({

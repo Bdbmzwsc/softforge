@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { Grid, Typography, Card, Button, Hidden, Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import ZoomImage from "../../../shared/components/ZoomImage";
+//import ZoomImage from "../../../shared/components/ZoomImage";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = (theme) => ({
@@ -144,11 +144,12 @@ function HeadSection(props) {
                   </Grid>
                   <Hidden mdDown>
                     <Grid item md={6}>
+                      {/*
                       <ZoomImage
                         src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
                         className={classes.image}
                         alt="header example"
-                      />
+  />*/}
                     </Grid>
                   </Hidden>
                 </Box>

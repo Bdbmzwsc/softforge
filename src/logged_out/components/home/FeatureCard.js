@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Typography } from "@mui/material";
 
 import withStyles from "@mui/styles/withStyles";
+import { Avatar } from "@mui/material";
 
 const styles = (theme) => ({
   iconWrapper: {
@@ -16,7 +17,7 @@ const styles = (theme) => ({
   },
 });
 
-function shadeColor(hex, percent) {
+/*function shadeColor(hex, percent) {
   const f = parseInt(hex.slice(1), 16);
 
   const t = percent < 0 ? 0 : 255;
@@ -36,23 +37,20 @@ function shadeColor(hex, percent) {
   )
     .toString(16)
     .slice(1)}`;
-}
+}*/
+
 
 function FeatureCard(props) {
-  const { classes, Icon, color, headline, text } = props;
+  const { img, headline, text } = props;
   return (
     <Fragment>
       <div
         // We will set color and fill here, due to some prios complications
-        className={classes.iconWrapper}
         style={{
-          color: color,
-          backgroundColor: shadeColor(color, 0.5),
-          fill: color,
           padding: 12,
         }}
       >
-        {Icon}
+        <Avatar src={img} />
       </div>
       <Typography variant="h5" paragraph>
         {headline}
